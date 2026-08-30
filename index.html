@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bel's Cake</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    background: #fff5f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("https://i.pinimg.com/736x/08/c0/8b/08c08babf54827063dce8e23705ef745.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #FF1493;
+}
+
+/* MENÚ */
+nav a {
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF9C4;
+    font-weight: bold;
+}
+
+/* SECCIONES */
+section {
+    display: none;
+    text-align: center;
+    padding: 60px;
+}
+
+.active {
+    display: block;
+}
+
+/* HERO */
+.hero {
+    background: #ffe4ec;
+}
+
+/* CARDS */
+.card {
+    display: inline-block;
+    margin: 20px;
+    background: #FFC0CB;
+    border-radius: 20px;
+    padding: 15px;
+    width: 220px;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+/* BOX */
+.box {
+    display: inline-block;
+    margin: 20px;
+    background: #FFC0CB;
+    border-radius: 20px;
+    padding: 15px;
+    width: 220px;
+}
+.box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.box {
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+}
+
+/* REDES */
+.redes a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ff99c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.redes a:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffd6e7;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 style="color: #FF69B4; text-shadow: 2px 2px 8px rgba(0,0,0,0.2);">
+Bel’s Cake 💕
+</h1>
+    <nav>
+        <a onclick="mostrar('inicio')">Inicio</a>
+        <a onclick="mostrar('postres')">Postres</a>
+        <a onclick="mostrar('servicios')">Servicios</a>
+        <a onclick="mostrar('contacto')">Contacto</a>
+    </nav>
+</header>
+
+<!-- INICIO -->
+<section id="inicio" class="active hero">
+    <h2>Bel’s Cake ✨</h2>
+    <p>Es una pastelería creada con amor, donde cada detalle está pensado para endulzar tus momentos más especiales.
+    Nos especializamos en postres caseros con un toque moderno, combinando sabores deliciosos con presentaciones irresistibles.
+    
+    💖 Perfecto para consentirte, regalar o celebrar cualquier ocasión.
+    ✨ Hecho con dedicación, creatividad y mucho amor.</p>
+    <!-- MINI POSTRES -->
+    <h3>🍰 Postres destacados</h3>
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/a8/f1/62/a8f1628df8740e5645cb4c25e22e82f0.jpg">
+        <p>Cupcakes</p>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/61/64/dc/6164dcbb551e6897b90096e3dfc99ad5.jpg">
+        <p>Pasteles</p>
+    </div>
+    <div class="card">
+        <img src="https://knightscroll.org/wp-content/uploads/2025/02/IMG_0476.jpg">
+        <p>Galletas</p>
+    </div>
+
+    <!-- MINI SERVICIOS -->
+    <h3>🎀 Servicios</h3>
+
+    <div class="box">
+        <img src="https://i.pinimg.com/1200x/6f/a9/9e/6fa99e0d6d83960e9c0da1afda63fd53.jpg">
+        <p>Pedidos</p>
+    </div>
+
+    <div class="box">
+        <img src="https://i.pinimg.com/736x/99/dc/21/99dc21fff833f88a3ad9116b4726cf18.jpg">
+        <p>Eventos</p>
+    </div>
+     <div class="box">
+        <img src="https://i.pinimg.com/1200x/8e/0a/a2/8e0aa269a55a0dc3118ac3a483af7316.jpg"> 
+        <p>Delivery</p>
+    </div>
+
+    <!-- MINI CONTACTO -->
+    <h3>📲 Síguenos</h3>
+
+    <div class="redes">
+        <a href="#">TikTok</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+    </div>
+
+</section>
+
+<!-- POSTRES -->
+<section id="postres">
+    <h2>Nuestros Postres 🍰</h2>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/474x/38/d7/68/38d7682d4608fbf30766c4a6bbeca059.jpg">
+        <p>12 de Cupcakes</p>
+        <p>L.650</p>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/22/04/04/220404df0a7f8ca32880139d180b8cb4.jpg">
+        <p>12 de Donas personalizadas</p>
+        <p>L.650</p>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/bb/e6/88/bbe6889b09dd96481f12748468ba4a76.jpg">
+        <p>Pasteles personalizados</p>
+        <p>L.900</p>
+    </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/b6/c8/67/b6c86706ea4f732686df601fe6601a7c.jpg">
+        <p>Tres leches mediano</p>
+        <p>L.890</p>
+    </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/d8/46/8d/d8468d0fc98f71dcd1d612a677da8d8e.jpg">
+        <p>12 de roles de canela con topins</p>
+        <p>L.850</p>
+    </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/564x/0a/67/65/0a6765942a04e7f5439b25126f9f0962.jpg">
+        <p>Flanes individuales</p>
+        <p>L.40</p>
+    </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/236x/62/2a/e4/622ae49f13c92b8230097b01546828cf.jpg">
+        <p>Cake pops</p>
+        <p>L.35</p>
+    </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/236x/b0/41/1c/b0411c4b3079917a271cc5c4b8bfe8fc.jpg">
+        <p>12 de Galletas</p>
+        <p>L.700</p>
+    </div>
+
+      <div class="card">
+        <img src="https://pbs.twimg.com/media/HFQWTn8aIAIJSZ0.jpg">
+        <p>Pie de oreo grande</p>
+        <p>L.680</p>
+    </div>
+
+      <div class="card">
+        <img src="https://cafeteriasa.com/cdn/shop/files/WhatsAppImage2025-05-07at10.51.11.jpg?v=1746626059">
+        <p>Croissant individual grande reyeno nutella</p>
+        <p>L.70</p>
+    </div>
+
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+    <h2>Servicios 🎀</h2>
+
+     <div class="box">
+        <img src="https://i.pinimg.com/236x/31/22/29/3122299a1413123f1065a077c9d47f47.jpg"> 
+        <p>Pedidos personalizados</p>
+    </div>
+    
+    <div class="box">
+        <img src="https://i.pinimg.com/236x/21/d6/c8/21d6c88b1e5e13859764f675ca8e892e.jpg"> 
+        <p>Delivery</p>
+    </div>
+
+    <div class="box">
+        <img src="https://i.pinimg.com/236x/af/0c/8b/af0c8b69b4b2f955e263fb7592e5d5a0.jpg"> 
+        <p>Eventos</p>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="redes">
+    <h2>Síguenos ✨</h2>
+
+    <a href="#">TikTok</a>
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">WhatsApp</a>
+</section>
+
+<footer>
+    <p>©️ 2026 Bel's Cake - Amor en cada bocado 💕</p>
+</footer>
+
+<script>
+function mostrar(seccion) {
+    let secciones = document.querySelectorAll("section");
+    secciones.forEach(sec => sec.classList.remove("active"));
+
+    document.getElementById(seccion).classList.add("active");
+}
+</script>
+
+</body>
+</html>
